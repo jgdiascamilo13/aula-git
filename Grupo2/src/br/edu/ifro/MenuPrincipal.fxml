@@ -1,14 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import com.jfoenix.controls.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.MenuPrincipalController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="451.0" prefWidth="744.0" style="-fx-background-color: f;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.edu.ifro.MenuPrincipalController">
     <children>
-        <Button layoutX="126" layoutY="90" text="Click Me!" onAction="#handleButtonAction" fx:id="button" />
-        <Label layoutX="126" layoutY="120" minHeight="16" minWidth="69" fx:id="label" />
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Pane prefHeight="451.0" prefWidth="197.0" style="-fx-background-color: #d9d9d9;">
+         <children>
+            <Pane prefHeight="158.0" prefWidth="197.0" style="-fx-background-color: #29303D;">
+               <children>
+                  <ImageView fitHeight="84.0" fitWidth="93.0" layoutX="61.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@IF%20BRANCO.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="133.0" layoutY="88.0" text="Label" />
+               </children>
+            </Pane>
+            <Label layoutX="85.0" layoutY="201.0" text="Label" />
+            <Label layoutX="95.0" layoutY="217.0" text="Label" />
+            <Label layoutX="95.0" layoutY="277.0" text="Label" />
+            <Label layoutX="85.0" layoutY="339.0" text="Label" />
+         </children>
+      </Pane>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="291.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true" />
     </children>
 </AnchorPane>
