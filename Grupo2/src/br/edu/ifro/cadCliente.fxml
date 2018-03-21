@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="665.0" style="-fx-background-color: e6e6e6;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.edu.ifro.CadClienteController">
+   <children>
+      <Pane layoutY="37.0" prefHeight="363.0" prefWidth="173.0" style="-fx-background-color: cccccc;" />
+      <Pane layoutX="173.0" layoutY="27.0" prefHeight="373.0" prefWidth="493.0" style="-fx-background-color: e6e6e6;">
+         <children>
+            <Pane layoutX="-173.0" layoutY="-27.0" prefHeight="39.0" prefWidth="666.0" style="-fx-background-color: b366ff;">
+               <children>
+                  <Text fill="#eeeded" layoutX="76.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastro de alunos" wrappingWidth="180.13671875">
+                     <font>
+                        <Font name="Book Antiqua" size="16.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="31.0" fitWidth="33.0" layoutX="26.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../students-cap.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <JFXTextField layoutX="22.0" layoutY="45.0" prefHeight="31.0" prefWidth="367.0" promptText="Digite o nome completo">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField layoutX="22.0" layoutY="101.0" prefHeight="31.0" prefWidth="173.0" promptText="Digite o número de telefone" />
+            <JFXTextField layoutX="210.0" layoutY="101.0" prefHeight="31.0" prefWidth="173.0" promptText="Digite o CPF" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
