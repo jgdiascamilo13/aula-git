@@ -9,31 +9,32 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="451.0" prefWidth="744.0" style="-fx-background-color: f;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.MenuPrincipalController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" style="-fx-background-color: f;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.MenuPrincipalController">
     <children>
-        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
-      <Pane prefHeight="451.0" prefWidth="197.0" style="-fx-background-color: #d9d9d9;">
+      <Pane prefHeight="400.0" prefWidth="136.0" style="-fx-background-color: #d9d9d9;">
          <children>
-            <Pane prefHeight="158.0" prefWidth="197.0" style="-fx-background-color: #29303D;">
+            <Pane prefHeight="127.0" prefWidth="136.0" style="-fx-background-color: #29303D;">
                <children>
-                  <ImageView fitHeight="84.0" fitWidth="93.0" layoutX="61.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="84.0" fitWidth="69.0" layoutX="37.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@IF%20BRANCO.png" />
                      </image>
                   </ImageView>
-                  <Label layoutX="133.0" layoutY="88.0" text="Label" />
+                  <JFXButton prefHeight="23.0" prefWidth="32.0" text="B1" />
+                  <ImageView fitHeight="28.0" fitWidth="23.0" layoutX="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Options.png" />
+                     </image>
+                  </ImageView>
                </children>
             </Pane>
-            <JFXButton />
-            <JFXButton layoutY="158.0" prefHeight="45.0" prefWidth="197.0" style="-fx-border-color: gray;" text="CADASTRO" />
-            <JFXButton layoutY="203.0" prefHeight="45.0" prefWidth="197.0" style="-fx-border-color: gray;" text="B1" />
-            <JFXButton layoutY="248.0" prefHeight="45.0" prefWidth="197.0" style="-fx-border-color: gray;" text="B2" />
-            <JFXButton layoutY="293.0" prefHeight="45.0" prefWidth="197.0" style="-fx-border-color: gray;" text="B3" />
-            <JFXButton layoutY="383.0" prefHeight="45.0" prefWidth="197.0" style="-fx-border-color: gray;" text="SAIR" />
-            <Label layoutX="39.0" layoutY="429.0" text="Los Cuatro Corporation ™" />
-            <JFXButton layoutY="338.0" prefHeight="45.0" prefWidth="197.0" style="-fx-border-color: gray;" text="RELATÓRIOS" />
+            <JFXButton layoutY="127.0" prefHeight="45.0" prefWidth="135.0" style="-fx-border-color: gray;" text="B1" />
+            <JFXButton layoutY="172.0" prefHeight="45.0" prefWidth="135.0" style="-fx-border-color: gray;" text="B1" />
+            <JFXButton layoutY="217.0" prefHeight="45.0" prefWidth="135.0" style="-fx-border-color: gray;" text="B1" />
+            <JFXButton layoutY="262.0" prefHeight="45.0" prefWidth="135.0" style="-fx-border-color: gray;" text="B1" />
+            <JFXButton layoutY="307.0" prefHeight="45.0" prefWidth="135.0" style="-fx-border-color: gray;" text="B1" />
          </children>
       </Pane>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="291.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true" />
+      <Pane layoutX="135.0" prefHeight="400.0" prefWidth="665.0" />
     </children>
 </AnchorPane>
