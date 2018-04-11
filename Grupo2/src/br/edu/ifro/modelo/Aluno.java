@@ -12,6 +12,8 @@ public class Aluno {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String nome;
+    
+    private Turma turma;
 
     public Integer getId() {
         return id;
