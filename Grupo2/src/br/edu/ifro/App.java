@@ -15,30 +15,24 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-/**
- *
- * @author 00080339271
- */
 public class App extends Application {
-    
+
     @Override
     public void start(Stage stage) throws Exception {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("aula");
         EntityManager em = emf.createEntityManager();
-        
+
         em.getTransaction().begin();
         Aluno aluno1 = new Aluno();
-        aluno1.setNome ("Fulano");
-        
+        aluno1.setNome("Fulano");
+
         em.persist(aluno1);
         em.getTransaction().commit();
-        
-        
-        
+
         Parent root = FXMLLoader.load(getClass().getResource("MenuPrincipal.fxml"));
-        
+
         Scene scene = new Scene(root);
-        
+
         stage.setScene(scene);
         stage.show();
     }
@@ -49,5 +43,5 @@ public class App extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-    
+
 }

@@ -1,4 +1,3 @@
-
 package br.edu.ifro.modelo;
 
 import javax.persistence.Entity;
@@ -8,7 +7,7 @@ import javax.persistence.Id;
 
 @Entity
 public class Aluno {
-    
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
@@ -29,9 +28,5 @@ public class Aluno {
     public void setNome(String nome) {
         this.nome = nome;
     }
-    
-    
-  
-    
-    
+
 }
