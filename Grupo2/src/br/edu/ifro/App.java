@@ -5,7 +5,7 @@
  */
 package br.edu.ifro;
 
-import br.edu.ifro.modelo.Aluno;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

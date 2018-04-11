@@ -8,7 +8,8 @@ package br.edu.ifro.start;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
-
+import br.edu.ifro.Aluno;
+import br.edu.ifro.Turma;
 /**
  *
  * @author 02119149240
@@ -20,8 +21,10 @@ public class Run {
 
         em.getTransaction().begin();
         Aluno aluno1 = new Aluno();
+        Turma turma= new Turma ();
+        
+        turma.setCategoria ("");
         aluno1.setNome("Fulano");
-
         em.persist(aluno1);
         em.getTransaction().commit();
     }
