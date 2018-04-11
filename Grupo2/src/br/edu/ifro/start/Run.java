@@ -10,6 +10,9 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import br.edu.ifro.modelo.Aluno;
 import br.edu.ifro.modelo.Turma;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 /**
  *
  * @author 02119149240
@@ -30,5 +33,6 @@ public class Run {
         em.persist(aluno1);
         em.persist(turma);
         em.getTransaction().commit();
+           
     }
 }
