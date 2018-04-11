@@ -14,7 +14,7 @@ import javafx.fxml.Initializable;
  *
  * @author 00669412295
  */
-public class CadClienteController implements Initializable {
+public class CadAlunoController implements Initializable {
 
     /**
      * Initializes the controller class.
