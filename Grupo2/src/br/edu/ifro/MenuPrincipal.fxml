@@ -11,30 +11,27 @@
 
 <AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" style="-fx-background-color: f;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.MenuPrincipalController">
     <children>
-      <Pane prefHeight="400.0" prefWidth="136.0" style="-fx-background-color: #d9d9d9;">
-         <children>
-            <Pane prefHeight="127.0" prefWidth="136.0" style="-fx-background-color: #29303D;">
-               <children>
-                  <ImageView fitHeight="84.0" fitWidth="69.0" layoutX="37.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@IF%20BRANCO.png" />
-                     </image>
-                  </ImageView>
-                  <JFXButton prefHeight="23.0" prefWidth="32.0" text="B1" />
-                  <ImageView fitHeight="28.0" fitWidth="23.0" layoutX="3.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@Options.png" />
-                     </image>
-                  </ImageView>
-               </children>
-            </Pane>
-            <JFXButton layoutY="127.0" prefHeight="45.0" prefWidth="135.0" style="-fx-border-color: gray;" text="B1" />
-            <JFXButton layoutY="172.0" prefHeight="45.0" prefWidth="135.0" style="-fx-border-color: gray;" text="B1" />
-            <JFXButton layoutY="217.0" prefHeight="45.0" prefWidth="135.0" style="-fx-border-color: gray;" text="B1" />
-            <JFXButton layoutY="262.0" prefHeight="45.0" prefWidth="135.0" style="-fx-border-color: gray;" text="B1" />
-            <JFXButton layoutY="307.0" prefHeight="45.0" prefWidth="135.0" style="-fx-border-color: gray;" text="B1" />
-         </children>
-      </Pane>
       <Pane layoutX="135.0" prefHeight="400.0" prefWidth="665.0" />
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="800.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Cadastros">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Cadastro de Alunos" />
+                  <MenuItem mnemonicParsing="false" text="Cadastro de Turmas" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Controle">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Gerenciar Alunos" />
+                  <MenuItem mnemonicParsing="false" text="Gerenciar Aulas" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Relatórios">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
     </children>
 </AnchorPane>
