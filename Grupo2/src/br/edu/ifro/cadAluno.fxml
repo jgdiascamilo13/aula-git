@@ -41,8 +41,12 @@
             <JFXTextField layoutX="21.0" layoutY="250.0" prefHeight="31.0" prefWidth="173.0" promptText="Digite o RG" />
             <Text fill="#4d4d4d" layoutX="213.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UF:" />
             <JFXComboBox layoutX="247.0" layoutY="255.0" />
-            <JFXButton buttonType="RAISED" layoutX="376.0" layoutY="325.0" style="-fx-background-color: #fe9a06;" text="Gerar QR code" textFill="WHITE" />
-            <JFXButton buttonType="RAISED" layoutX="267.0" layoutY="325.0" ripplerFill="#3683e4" style="-fx-background-color: #3683e4;" text="Cadastrar aluno" textFill="WHITE" />
+            <JFXButton buttonType="RAISED" layoutX="350.0" layoutY="322.0" ripplerFill="#3683e4" style="-fx-background-color: #3683e4;" text="Cadastrar turma" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font></JFXButton>
+            <JFXComboBox layoutX="77.0" layoutY="293.0" prefHeight="25.0" prefWidth="173.0" />
+            <Text fill="#4d4d4d" layoutX="22.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Turma:" />
          </children>
       </Pane>
    </children>
