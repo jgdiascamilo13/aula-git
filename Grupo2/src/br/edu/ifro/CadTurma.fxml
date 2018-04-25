@@ -15,38 +15,37 @@
          <children>
             <Pane layoutX="173.0" layoutY="27.0" prefHeight="373.0" prefWidth="501.0" style="-fx-background-color: e6e6e6;">
                <children>
-                  <Pane layoutX="-173.0" layoutY="-32.0" prefHeight="44.0" prefWidth="675.0" style="-fx-background-color: #26a65b;">
+                  <Pane layoutX="-173.0" layoutY="-32.0" prefHeight="44.0" prefWidth="675.0" style="-fx-background-color: #04B4AE;">
                      <children>
-                        <Text fill="#eeeded" layoutX="61.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastro de turma" wrappingWidth="180.13671875">
+                        <Text fill="WHITE" layoutX="61.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastro de turma" wrappingWidth="180.13671875">
                            <font>
-                              <Font name="Estrangelo Edessa" size="21.0" />
+                              <Font name="Estrangelo Edessa" size="24.0" />
                            </font>
                         </Text>
-                        <ImageView fitHeight="25.0" fitWidth="30.0" layoutX="12.0" layoutY="7.0">
+                        <ImageView fitHeight="25.0" fitWidth="34.0" layoutX="11.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../../../../../../Downloads/presentation.png" />
+                              <Image url="@team%20(1).png" />
                            </image>
                         </ImageView>
                      </children>
                   </Pane>
-                  <JFXTextField layoutX="-130.0" layoutY="52.0" prefHeight="31.0" prefWidth="367.0" promptText="Digite o nome completo">
-                     <font>
-                        <Font size="15.0" />
-                     </font>
-                  </JFXTextField>
-                  <JFXTextField layoutX="-131.0" layoutY="208.0" prefHeight="31.0" prefWidth="173.0" promptText="Digite o número de telefone" />
-                  <JFXTextField layoutX="61.0" layoutY="208.0" prefHeight="31.0" prefWidth="173.0" promptText="Digite o CPF" />
-                  <JFXTextField layoutX="-130.0" layoutY="104.0" prefHeight="31.0" prefWidth="367.0" promptText="Digite o e-mail" />
-                  <JFXTextField layoutX="-130.0" layoutY="156.0" prefHeight="31.0" prefWidth="367.0" promptText="Digite o nome da mãe" />
-                  <JFXTextField layoutX="-131.0" layoutY="257.0" prefHeight="31.0" prefWidth="173.0" promptText="Digite o RG" />
-                  <Text fill="#4d4d4d" layoutX="61.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UF:" />
-                  <JFXComboBox layoutX="95.0" layoutY="262.0" />
-                  <JFXButton buttonType="RAISED" layoutX="355.0" layoutY="320.0" prefHeight="31.0" prefWidth="119.0" ripplerFill="#3683e4" style="-fx-background-color: #26a65b;" text="Cadastrar turma" textFill="WHITE">
+                  <JFXButton buttonType="RAISED" layoutX="350.0" layoutY="320.0" prefHeight="31.0" prefWidth="119.0" ripplerFill="#3683e4" style="-fx-background-color: #26a65b;" text="Salvar" textFill="WHITE">
                      <font>
                         <Font size="13.0" />
                      </font></JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="213.0" layoutY="320.0" prefHeight="31.0" prefWidth="119.0" ripplerFill="#801a1a" style="-fx-background-color: #d84e4b;" text="Cancelar" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXComboBox layoutX="-130.0" layoutY="43.0" prefHeight="30.0" prefWidth="235.0" promptText="Selecione a categoria">
+                      
+                  </JFXComboBox>    
                </children>
             </Pane>
+            <JFXComboBox layoutX="42.0" layoutY="125.0" prefHeight="30.0" prefWidth="150.0" promptText="Selecione o ano" />
+            <JFXComboBox layoutX="42.0" layoutY="185.0" prefHeight="30.0" prefWidth="150.0" promptText="Selecione o turno" />
+            <JFXComboBox layoutX="42.0" layoutY="243.0" prefHeight="30.0" prefWidth="235.0" promptText="Selecione o curso" />
          </children>
       </AnchorPane>
    </children>
