@@ -1,21 +1,24 @@
 package br.edu.ifro.modelo;
 
+import com.mysql.jdbc.Blob;
 import java.io.File;
 import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Lob;
 
 @Entity
 public class Servidor { // cria uma tabela servidor
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id,idade;
-    private String nome,cpf,siape,email;
+    private Integer id, idade;
+    private String nome, cpf, siape, email;
     private Date data_nasc;
-    private File foto,biometria;
+    @Lob
+    private Blob foto, biometria;
 
     public Integer getId() {
         return id;
@@ -31,6 +34,22 @@ public class Servidor { // cria uma tabela servidor
 
     public void setIdade(Integer idade) {
         this.idade = idade;
+    }
+
+    public Blob getFoto() {
+        return foto;
+    }
+
+    public void setFoto(Blob foto) {
+        this.foto = foto;
+    }
+
+    public Blob getBiometria() {
+        return biometria;
+    }
+
+    public void setBiometria(Blob biometria) {
+        this.biometria = biometria;
     }
 
     public String getNome() {
@@ -71,22 +90,6 @@ public class Servidor { // cria uma tabela servidor
 
     public void setData_nasc(Date data_nasc) {
         this.data_nasc = data_nasc;
-    }
-
-    public File getFoto() {
-        return foto;
-    }
-
-    public void setFoto(File foto) {
-        this.foto = foto;
-    }
-
-    public File getBiometria() {
-        return biometria;
-    }
-
-    public void setBiometria(File biometria) {
-        this.biometria = biometria;
     }
 
 }
