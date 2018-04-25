@@ -9,6 +9,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import br.edu.ifro.modelo.Aluno;
+import br.edu.ifro.modelo.Servidor;
 import br.edu.ifro.modelo.Turma;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -25,11 +26,11 @@ public class Run {
         em.getTransaction().begin();
         Aluno aluno1 = new Aluno();
         Turma turma= new Turma ();
+        Servidor servidor = new Servidor();
         
-        turma.setCategoria ("Integral");
-        turma.setAno("3°");
-        turma.setPeriodo ("Matutino");
-        turma.setCurso("Informática");
+        
+        aluno1.setNome("James");
+        
         em.persist(aluno1);
         em.persist(turma);
         em.getTransaction().commit();
