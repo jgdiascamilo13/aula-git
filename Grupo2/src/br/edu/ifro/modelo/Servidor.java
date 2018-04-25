@@ -1,7 +1,6 @@
 package br.edu.ifro.modelo;
 
 import com.mysql.jdbc.Blob;
-import java.io.File;
 import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -18,7 +17,7 @@ public class Servidor { // cria uma tabela servidor
     private String nome, cpf, siape, email;
     private Date data_nasc;
     @Lob
-    private Blob foto, biometria;
+    private Blob foto, rfid;
 
     public Integer getId() {
         return id;
@@ -44,12 +43,12 @@ public class Servidor { // cria uma tabela servidor
         this.foto = foto;
     }
 
-    public Blob getBiometria() {
-        return biometria;
+    public Blob getRfid() {
+        return rfid;
     }
 
-    public void setBiometria(Blob biometria) {
-        this.biometria = biometria;
+    public void setRfid(Blob rfid) {
+        this.rfid = rfid;
     }
 
     public String getNome() {
