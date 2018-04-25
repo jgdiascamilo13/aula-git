@@ -8,6 +8,7 @@
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.collections.*?>
 
 <AnchorPane id="AnchorPane" prefHeight="378.0" prefWidth="675.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.CadTurmaController">
    <children>
@@ -38,14 +39,43 @@
                         <Font size="13.0" />
                      </font>
                   </JFXButton>
-                  <JFXComboBox layoutX="-130.0" layoutY="43.0" prefHeight="30.0" prefWidth="235.0" promptText="Selecione a categoria">
-                      
-                  </JFXComboBox>    
+                  <JFXComboBox layoutX="-130.0" layoutY="43.0" prefHeight="30.0" prefWidth="216.0" promptText="Selecione a categoria">
+                        <items>
+                            <FXCollections fx:factory="observableArrayList">
+                                 <String fx:value="Integrado" />
+                                <String fx:value="Concomitante" />
+                                <String fx:value="Licenciatura" />
+                            </FXCollections>
+                        </items>
+                  </JFXComboBox>  
                </children>
             </Pane>
-            <JFXComboBox layoutX="42.0" layoutY="125.0" prefHeight="30.0" prefWidth="150.0" promptText="Selecione o ano" />
-            <JFXComboBox layoutX="42.0" layoutY="185.0" prefHeight="30.0" prefWidth="150.0" promptText="Selecione o turno" />
-            <JFXComboBox layoutX="42.0" layoutY="243.0" prefHeight="30.0" prefWidth="235.0" promptText="Selecione o curso" />
+            <JFXComboBox layoutX="42.0" layoutY="113.0" prefHeight="30.0" prefWidth="216.0" promptText="Selecione o curso">
+                <items>
+                     <FXCollections fx:factory="observableArrayList">
+                         <String fx:value="Informática" />
+                         <String fx:value="Química" />
+                         <String fx:value="Florestas" />
+                     </FXCollections>
+                </items>
+            </JFXComboBox>
+            <JFXComboBox layoutX="42.0" layoutY="158.0" prefHeight="30.0" prefWidth="150.0" promptText="Selecione o ano">
+                <items>
+                     <FXCollections fx:factory="observableArrayList">
+                         <String fx:value="1º" />
+                         <String fx:value="2º" />
+                         <String fx:value="3º" />
+                     </FXCollections>
+                </items>
+            </JFXComboBox>
+            <JFXComboBox layoutX="42.0" layoutY="206.0" prefHeight="30.0" prefWidth="150.0" promptText="Selecione o turno">
+                <items>
+                     <FXCollections fx:factory="observableArrayList">
+                         <String fx:value="Matutino" />
+                         <String fx:value="Vespertino" />
+                     </FXCollections>
+                </items>
+            </JFXComboBox>
          </children>
       </AnchorPane>
    </children>
