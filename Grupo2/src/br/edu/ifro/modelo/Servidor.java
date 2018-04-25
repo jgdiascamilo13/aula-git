@@ -13,7 +13,8 @@ public class Servidor { // cria uma tabela servidor
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id, idade;
+    private Integer id;
+    private Integer idade;
     private String nome, cpf, siape, email;
     private Date data_nasc;
     @Lob

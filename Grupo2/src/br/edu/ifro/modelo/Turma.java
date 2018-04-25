@@ -11,6 +11,7 @@ import javax.persistence.Id;
 public class Turma {
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
+    private Integer  id;
     private String categoria, ano, periodo, curso;
     private Date data;
 
