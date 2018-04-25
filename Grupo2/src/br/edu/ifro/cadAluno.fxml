@@ -13,16 +13,16 @@
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="665.0" style="-fx-background-color: e6e6e6;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.CadClienteController">
    <children>
       <Pane layoutY="37.0" prefHeight="363.0" prefWidth="173.0" style="-fx-background-color: cccccc;" />
-      <Pane layoutX="173.0" layoutY="27.0" prefHeight="373.0" prefWidth="493.0" style="-fx-background-color: e6e6e6;">
+      <Pane layoutX="173.0" layoutY="27.0" prefHeight="373.0" prefWidth="501.0" style="-fx-background-color: e6e6e6;">
          <children>
-            <Pane layoutX="-173.0" layoutY="-27.0" prefHeight="39.0" prefWidth="666.0" style="-fx-background-color: #3683e4;">
+            <Pane layoutX="-173.0" layoutY="-27.0" prefHeight="44.0" prefWidth="674.0" style="-fx-background-color: #3683e4;">
                <children>
-                  <Text fill="#eeeded" layoutX="76.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastro de alunos" wrappingWidth="180.13671875">
+                  <Text fill="#eeeded" layoutX="78.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastro de alunos" wrappingWidth="208.13671875">
                      <font>
-                        <Font name="Estrangelo Edessa" size="19.0" />
+                        <Font name="Estrangelo Edessa" size="24.0" />
                      </font>
                   </Text>
-                  <ImageView fitHeight="31.0" fitWidth="33.0" layoutX="26.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="31.0" fitWidth="33.0" layoutX="26.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../../students-cap.png" />
                      </image>
@@ -35,18 +35,21 @@
                </font>
             </JFXTextField>
             <JFXTextField layoutX="22.0" layoutY="97.0" prefHeight="31.0" prefWidth="367.0" promptText="Digite o e-mail" />
-            <JFXTextField layoutX="22.0" layoutY="149.0" prefHeight="31.0" prefWidth="367.0" promptText="Digite o nome do responsável" />
-            <JFXTextField layoutX="21.0" layoutY="201.0" prefHeight="31.0" prefWidth="173.0" promptText="Digite o número de telefone" />
-            <JFXTextField layoutX="213.0" layoutY="201.0" prefHeight="31.0" prefWidth="173.0" promptText="Digite o CPF" />
-            <JFXTextField layoutX="21.0" layoutY="250.0" prefHeight="31.0" prefWidth="173.0" promptText="Digite o RG" />
-            <Text fill="#4d4d4d" layoutX="213.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UF:" />
-            <JFXComboBox layoutX="247.0" layoutY="255.0" />
-            <JFXComboBox layoutX="77.0" layoutY="293.0" prefHeight="25.0" prefWidth="173.0" />
-            <JFXButton buttonType="RAISED" layoutX="350.0" layoutY="322.0" ripplerFill="#3683e4" style="-fx-background-color: #3683e4;" text="Cadastrar turma" textFill="WHITE">
+            <JFXTextField layoutX="23.0" layoutY="149.0" prefHeight="31.0" prefWidth="173.0" promptText="Digite o número de telefone" />
+            <JFXTextField layoutX="215.0" layoutY="149.0" prefHeight="31.0" prefWidth="173.0" promptText="Digite o CPF" />
+            <JFXTextField layoutX="23.0" layoutY="204.0" prefHeight="31.0" prefWidth="173.0" promptText="Digite o RG" />
+            <JFXComboBox layoutX="215.0" layoutY="209.0" prefHeight="25.0" prefWidth="173.0" promptText="Indique a UF" />
+            <JFXComboBox layoutX="23.0" layoutY="259.0" prefHeight="25.0" prefWidth="173.0" promptText="Selecione a turma" />
+            <JFXButton buttonType="RAISED" layoutX="232.0" layoutY="324.0" prefHeight="29.0" prefWidth="110.0" ripplerFill="#801a1a" style="-fx-background-color: #d84e4b;" text="Cancelar" textFill="WHITE">
                <font>
                   <Font size="13.0" />
-               </font></JFXButton>
-            <Text fill="#4d4d4d" layoutX="22.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Turma:" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="369.0" layoutY="324.0" prefHeight="29.0" prefWidth="110.0" ripplerFill="#3683e4" style="-fx-background-color: #26a65b;" text="Salvar" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXButton>
          </children>
       </Pane>
    </children>
