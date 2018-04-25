@@ -34,18 +34,18 @@
                   <Font size="15.0" />
                </font>
             </JFXTextField>
-            <JFXTextField layoutX="21.0" layoutY="201.0" prefHeight="31.0" prefWidth="173.0" promptText="Digite o número de telefone" />
-            <JFXTextField layoutX="213.0" layoutY="201.0" prefHeight="31.0" prefWidth="173.0" promptText="Digite o CPF" />
             <JFXTextField layoutX="22.0" layoutY="97.0" prefHeight="31.0" prefWidth="367.0" promptText="Digite o e-mail" />
             <JFXTextField layoutX="22.0" layoutY="149.0" prefHeight="31.0" prefWidth="367.0" promptText="Digite o nome da mãe" />
+            <JFXTextField layoutX="21.0" layoutY="201.0" prefHeight="31.0" prefWidth="173.0" promptText="Digite o número de telefone" />
+            <JFXTextField layoutX="213.0" layoutY="201.0" prefHeight="31.0" prefWidth="173.0" promptText="Digite o CPF" />
             <JFXTextField layoutX="21.0" layoutY="250.0" prefHeight="31.0" prefWidth="173.0" promptText="Digite o RG" />
             <Text fill="#4d4d4d" layoutX="213.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UF:" />
             <JFXComboBox layoutX="247.0" layoutY="255.0" />
+            <JFXComboBox layoutX="77.0" layoutY="293.0" prefHeight="25.0" prefWidth="173.0" />
             <JFXButton buttonType="RAISED" layoutX="350.0" layoutY="322.0" ripplerFill="#3683e4" style="-fx-background-color: #3683e4;" text="Cadastrar turma" textFill="WHITE">
                <font>
                   <Font size="13.0" />
                </font></JFXButton>
-            <JFXComboBox layoutX="77.0" layoutY="293.0" prefHeight="25.0" prefWidth="173.0" />
             <Text fill="#4d4d4d" layoutX="22.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Turma:" />
          </children>
       </Pane>

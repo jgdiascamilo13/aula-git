@@ -8,7 +8,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Servidor { // cria uma tabela aluno
+public class Servidor { // cria uma tabela servidor
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
