@@ -16,8 +16,8 @@
         <menus>
           <Menu mnemonicParsing="false" text="Cadastros">
             <items>
-              <MenuItem mnemonicParsing="false" text="Cadastro de Alunos" />
-                  <MenuItem mnemonicParsing="false" text="Cadastro de Turmas" />
+              <MenuItem mnemonicParsing="false" onAction="#abrirCadAluno" text="Cadastro de Alunos" />
+                  <MenuItem mnemonicParsing="false" onAction="#abrirCadTurma" text="Cadastro de Turmas" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Controle">

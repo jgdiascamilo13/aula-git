@@ -29,23 +29,23 @@
                   </ImageView>
                </children>
             </Pane>
-            <JFXTextField layoutX="22.0" layoutY="45.0" prefHeight="31.0" prefWidth="367.0" promptText="Nome completo">
+            <JFXTextField fx:id="txtNome" layoutX="22.0" layoutY="45.0" prefHeight="31.0" prefWidth="367.0" promptText="Nome completo">
                <font>
                   <Font size="15.0" />
                </font>
             </JFXTextField>
-            <JFXTextField layoutX="22.0" layoutY="91.0" prefHeight="31.0" prefWidth="367.0" promptText="E-Mail" />
-            <JFXTextField layoutX="23.0" layoutY="137.0" prefHeight="31.0" prefWidth="173.0" promptText="Telefone" />
-            <JFXTextField layoutX="215.0" layoutY="137.0" prefHeight="31.0" prefWidth="173.0" promptText="Digite o CPF" />
-            <JFXTextField layoutX="23.0" layoutY="186.0" prefHeight="31.0" prefWidth="173.0" promptText="RG" />
+            <JFXTextField fx:id="txtEmail" layoutX="22.0" layoutY="91.0" prefHeight="31.0" prefWidth="367.0" promptText="E-Mail" />
+            <JFXTextField fx:id="txtTelefone" layoutX="23.0" layoutY="137.0" prefHeight="31.0" prefWidth="173.0" promptText="Telefone" />
+            <JFXTextField fx:id="txtCpf" layoutX="215.0" layoutY="137.0" prefHeight="31.0" prefWidth="173.0" promptText="Digite o CPF" />
+            <JFXTextField fx:id="txtRg" layoutX="23.0" layoutY="186.0" prefHeight="31.0" prefWidth="173.0" promptText="RG" />
             <JFXComboBox layoutX="215.0" layoutY="186.0" prefHeight="31.0" prefWidth="173.0" promptText="UF" />
             <JFXComboBox layoutX="23.0" layoutY="229.0" prefHeight="31.0" prefWidth="173.0" promptText="Turma" />
-            <JFXButton buttonType="RAISED" layoutX="207.0" layoutY="324.0" prefHeight="31.0" prefWidth="119.0" ripplerFill="#801a1a" style="-fx-background-color: #d84e4b;" text="Cancelar" textFill="WHITE">
+            <JFXButton fx:id="btnCancelar" buttonType="RAISED" layoutX="207.0" layoutY="324.0" onAction="#cancelar" prefHeight="31.0" prefWidth="119.0" ripplerFill="#801a1a" style="-fx-background-color: #d84e4b;" text="Cancelar" textFill="WHITE">
                <font>
                   <Font size="13.0" />
                </font>
             </JFXButton>
-            <JFXButton buttonType="RAISED" layoutX="344.0" layoutY="324.0" prefHeight="31.0" prefWidth="119.0" ripplerFill="#3683e4" style="-fx-background-color: #26a65b;" text="Salvar" textFill="WHITE">
+            <JFXButton fx:id="btnSalvar" buttonType="RAISED" layoutX="344.0" layoutY="324.0" onAction="#salvarAluno" prefHeight="31.0" prefWidth="119.0" ripplerFill="#3683e4" style="-fx-background-color: #26a65b;" text="Salvar" textFill="WHITE">
                <font>
                   <Font size="13.0" />
                </font>
