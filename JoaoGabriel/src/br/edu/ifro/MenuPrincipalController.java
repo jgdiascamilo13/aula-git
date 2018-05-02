@@ -5,11 +5,15 @@
  */
 package br.edu.ifro;
 
+import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXTextField;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.TextField;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
 /**
@@ -17,14 +21,21 @@ import javafx.scene.control.Label;
  * @author 92718540206
  */
 public class MenuPrincipalController implements Initializable {
+
+    @FXML
+    private JFXTextField txtNum1, txtNum2, txtResult;
+    @FXML
+    private JFXButton btnSomar;
+    
+
     
     @FXML
-    private Label label;
-    
-    @FXML
-    private void handleButtonAction(ActionEvent event) {
-        System.out.println("You clicked me!");
-        label.setText("Hello World!");
+    private void somar(ActionEvent event) {
+        Double num1 = Double.parseDouble(txtNum1.getText());
+        Double num2 = Double.parseDouble(txtNum2.getText());
+        Double result = num1 + num2;
+        
+        this.txtResult.setText(result.toString());
     }
     
     @Override
