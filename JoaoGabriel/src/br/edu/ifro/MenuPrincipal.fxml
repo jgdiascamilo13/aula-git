@@ -7,14 +7,24 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="228.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.MenuPrincipalController">
+<AnchorPane id="AnchorPane" prefHeight="278.0" prefWidth="370.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.MenuPrincipalController">
     <children>
-      <JFXTextField fx:id="txtNum1" layoutX="14.0" layoutY="22.0" promptText="1º Número" />
-      <JFXTextField fx:id="txtNum2" layoutX="172.0" layoutY="22.0" promptText="2º Número" />
-      <JFXTextField fx:id="txtResult" layoutX="93.0" layoutY="77.0" promptText="Resultado" />
-      <JFXButton fx:id="btnSomar" layoutX="80.0" layoutY="116.0" onAction="#somar" prefHeight="25.0" prefWidth="69.0" text="Somar" />
-      <JFXButton layoutX="172.0" layoutY="116.0" prefHeight="25.0" prefWidth="69.0" text="Subtrair" />
-      <JFXButton layoutX="172.0" layoutY="150.0" prefHeight="25.0" prefWidth="69.0" text="Multiplicar" />
-      <JFXButton layoutX="80.0" layoutY="150.0" prefHeight="25.0" prefWidth="69.0" text="Dividir" />
+      <JFXTextField fx:id="txtNum1" layoutX="17.0" layoutY="157.0" promptText="1º Número" />
+      <JFXTextField fx:id="txtNum2" layoutX="175.0" layoutY="157.0" promptText="2º Número" />
+      <JFXTextField fx:id="txtResult" layoutX="173.0" layoutY="224.0" promptText="Resultado" />
+      <JFXButton fx:id="btnSomar" layoutX="25.0" layoutY="199.0" onAction="#somar" prefHeight="25.0" prefWidth="69.0" text="Somar" />
+      <JFXButton layoutX="94.0" layoutY="199.0" onAction="#subtrair" prefHeight="25.0" prefWidth="69.0" text="Subtrair" />
+      <JFXButton layoutX="94.0" layoutY="232.0" onAction="#multiplicar" prefHeight="25.0" prefWidth="69.0" text="Multiplicar" />
+      <JFXButton layoutX="25.0" layoutY="232.0" onAction="#dividir" prefHeight="25.0" prefWidth="69.0" text="Dividir" />
+      <MenuBar layoutY="2.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Opções">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#abrirCadastroAluno" text="Alunos" />
+                  <MenuItem mnemonicParsing="false" onAction="#fecharProjeto" text="Fechar" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
     </children>
 </AnchorPane>
