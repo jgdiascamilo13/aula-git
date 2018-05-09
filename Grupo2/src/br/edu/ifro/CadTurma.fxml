@@ -16,9 +16,18 @@
          <children>
             <Pane layoutX="173.0" layoutY="27.0" prefHeight="373.0" prefWidth="501.0" style="-fx-background-color: e6e6e6;">
                <children>
+                  <JFXButton buttonType="RAISED" layoutX="350.0" layoutY="320.0" prefHeight="31.0" prefWidth="119.0" ripplerFill="#3683e4" style="-fx-background-color: #26a65b;" text="Salvar" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font></JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="213.0" layoutY="320.0" prefHeight="31.0" prefWidth="119.0" ripplerFill="#801a1a" style="-fx-background-color: #d84e4b;" text="Cancelar" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </JFXButton>
                   <Pane layoutX="-173.0" layoutY="-32.0" prefHeight="44.0" prefWidth="675.0" style="-fx-background-color: #04B4AE;">
                      <children>
-                        <Text fill="WHITE" layoutX="61.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastro de turma" wrappingWidth="180.13671875">
+                        <Text fill="WHITE" layoutX="61.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastro de Turma" wrappingWidth="196.13671875">
                            <font>
                               <Font name="Estrangelo Edessa" size="24.0" />
                            </font>
@@ -29,28 +38,10 @@
                            </image>
                         </ImageView>
                      </children>
-                  </Pane>
-                  <JFXButton buttonType="RAISED" layoutX="350.0" layoutY="320.0" prefHeight="31.0" prefWidth="119.0" ripplerFill="#3683e4" style="-fx-background-color: #26a65b;" text="Salvar" textFill="WHITE">
-                     <font>
-                        <Font size="13.0" />
-                     </font></JFXButton>
-                  <JFXButton buttonType="RAISED" layoutX="213.0" layoutY="320.0" prefHeight="31.0" prefWidth="119.0" ripplerFill="#801a1a" style="-fx-background-color: #d84e4b;" text="Cancelar" textFill="WHITE">
-                     <font>
-                        <Font size="13.0" />
-                     </font>
-                  </JFXButton>
-                  <JFXComboBox layoutX="-130.0" layoutY="43.0" prefHeight="30.0" prefWidth="216.0" promptText="Selecione a categoria">
-                        <items>
-                            <FXCollections fx:factory="observableArrayList">
-                                 <String fx:value="Integrado" />
-                                <String fx:value="Concomitante" />
-                                <String fx:value="Licenciatura" />
-                            </FXCollections>
-                        </items>
-                  </JFXComboBox>  
+                  </Pane>  
                </children>
             </Pane>
-            <JFXComboBox layoutX="42.0" layoutY="113.0" prefHeight="30.0" prefWidth="216.0" promptText="Selecione o curso">
+            <JFXComboBox layoutX="80.0" layoutY="113.0" prefHeight="30.0" prefWidth="216.0" promptText="Selecione o curso">
                 <items>
                      <FXCollections fx:factory="observableArrayList">
                          <String fx:value="Informática" />
@@ -59,7 +50,7 @@
                      </FXCollections>
                 </items>
             </JFXComboBox>
-            <JFXComboBox layoutX="42.0" layoutY="158.0" prefHeight="30.0" prefWidth="150.0" promptText="Selecione o ano">
+            <JFXComboBox layoutX="80.0" layoutY="158.0" prefHeight="30.0" prefWidth="150.0" promptText="Selecione o ano">
                 <items>
                      <FXCollections fx:factory="observableArrayList">
                          <String fx:value="1º" />
@@ -68,7 +59,7 @@
                      </FXCollections>
                 </items>
             </JFXComboBox>
-            <JFXComboBox layoutX="42.0" layoutY="206.0" prefHeight="30.0" prefWidth="150.0" promptText="Selecione o turno">
+            <JFXComboBox layoutX="80.0" layoutY="206.0" prefHeight="30.0" prefWidth="150.0" promptText="Selecione o turno">
                 <items>
                      <FXCollections fx:factory="observableArrayList">
                          <String fx:value="Matutino" />
@@ -76,6 +67,16 @@
                      </FXCollections>
                 </items>
             </JFXComboBox>
+            <JFXComboBox layoutX="80.0" layoutY="70.0" prefHeight="30.0" prefWidth="216.0" promptText="Selecione a categoria">
+                  <items>
+                      <FXCollections fx:factory="observableArrayList">
+                           <String fx:value="Integrado" />
+                          <String fx:value="Concomitante" />
+                          <String fx:value="Licenciatura" />
+                      </FXCollections>
+                  </items>
+            </JFXComboBox>
+            <Pane layoutY="39.0" prefHeight="361.0" prefWidth="46.0" style="-fx-background-color: #BDBDBD;" />
          </children>
       </AnchorPane>
    </children>

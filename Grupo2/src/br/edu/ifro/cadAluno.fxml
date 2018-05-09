@@ -12,12 +12,15 @@
 
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="665.0" style="-fx-background-color: e6e6e6;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.CadClienteController">
    <children>
-      <Pane layoutY="37.0" prefHeight="363.0" prefWidth="173.0" style="-fx-background-color: cccccc;" />
+      <Pane layoutY="44.0" prefHeight="356.0" prefWidth="173.0" style="-fx-background-color: #D8D8D8;">
+         <children>
+            <Pane prefHeight="356.0" prefWidth="46.0" style="-fx-background-color: #BDBDBD;" />
+         </children></Pane>
       <Pane layoutX="173.0" layoutY="27.0" prefHeight="373.0" prefWidth="501.0" style="-fx-background-color: e6e6e6;">
          <children>
             <Pane layoutX="-173.0" layoutY="-27.0" prefHeight="44.0" prefWidth="675.0" style="-fx-background-color: #3683e4;">
                <children>
-                  <Text fill="#eeeded" layoutX="61.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastro de alunos" wrappingWidth="208.13671875">
+                  <Text fill="#eeeded" layoutX="61.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastro de Aluno" wrappingWidth="208.13671875">
                      <font>
                         <Font name="Estrangelo Edessa" size="24.0" />
                      </font>
@@ -29,17 +32,17 @@
                   </ImageView>
                </children>
             </Pane>
-            <JFXTextField fx:id="txtNome" layoutX="22.0" layoutY="45.0" prefHeight="31.0" prefWidth="367.0" promptText="Nome completo">
+            <JFXTextField fx:id="txtNome" layoutX="22.0" layoutY="45.0" prefHeight="31.0" prefWidth="367.0" promptText="Nome Completo">
                <font>
                   <Font size="15.0" />
                </font>
             </JFXTextField>
-            <JFXTextField fx:id="txtEmail" layoutX="22.0" layoutY="91.0" prefHeight="31.0" prefWidth="367.0" promptText="E-Mail" />
-            <JFXTextField fx:id="txtTelefone" layoutX="23.0" layoutY="137.0" prefHeight="31.0" prefWidth="173.0" promptText="Telefone" />
-            <JFXTextField fx:id="txtCpf" layoutX="215.0" layoutY="137.0" prefHeight="31.0" prefWidth="173.0" promptText="Digite o CPF" />
-            <JFXTextField fx:id="txtRg" layoutX="23.0" layoutY="186.0" prefHeight="31.0" prefWidth="173.0" promptText="RG" />
-            <JFXComboBox layoutX="215.0" layoutY="186.0" prefHeight="31.0" prefWidth="173.0" promptText="UF" />
-            <JFXComboBox layoutX="23.0" layoutY="229.0" prefHeight="31.0" prefWidth="173.0" promptText="Turma" />
+            <JFXTextField fx:id="txtEmail" layoutX="22.0" layoutY="86.0" prefHeight="31.0" prefWidth="367.0" promptText="E-Mail" />
+            <JFXTextField fx:id="txtTelefone" layoutX="22.0" layoutY="127.0" prefHeight="31.0" prefWidth="173.0" promptText="Telefone" />
+            <JFXTextField fx:id="txtCpf" layoutX="215.0" layoutY="127.0" prefHeight="31.0" prefWidth="173.0" promptText="Digite o CPF" />
+            <JFXTextField fx:id="txtRg" layoutX="22.0" layoutY="171.0" prefHeight="31.0" prefWidth="173.0" promptText="RG" />
+            <JFXComboBox layoutX="215.0" layoutY="171.0" prefHeight="31.0" prefWidth="173.0" promptText="UF" />
+            <JFXComboBox layoutX="22.0" layoutY="211.0" prefHeight="31.0" prefWidth="173.0" promptText="Turma" />
             <JFXButton fx:id="btnCancelar" buttonType="RAISED" layoutX="207.0" layoutY="324.0" onAction="#cancelar" prefHeight="31.0" prefWidth="119.0" ripplerFill="#801a1a" style="-fx-background-color: #d84e4b;" text="Cancelar" textFill="WHITE">
                <font>
                   <Font size="13.0" />
