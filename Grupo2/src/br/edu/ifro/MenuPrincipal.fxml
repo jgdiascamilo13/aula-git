@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.paint.*?>
 <?import com.jfoenix.controls.*?>
@@ -11,13 +12,36 @@
 
 <AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" style="-fx-background-color: f;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.MenuPrincipalController">
     <children>
-      <Pane layoutX="135.0" prefHeight="400.0" prefWidth="665.0" />
-      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="800.0">
+      <Pane layoutX="135.0" prefHeight="400.0" prefWidth="665.0">
+         <children>
+            <Label layoutX="88.0" layoutY="280.0" text="Virtual">
+               <font>
+                  <Font name="Gungsuh" size="54.0" />
+               </font>
+            </Label>
+            <Label layoutX="323.0" layoutY="280.0" text="Pass" textFill="#17d3e8">
+               <font>
+                  <Font name="Gungsuh" size="54.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="89.0" fitWidth="88.0" layoutX="229.0" layoutY="121.0">
+               <image>
+                  <Image url="@verified-contact.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="170.0" layoutY="66.0">
+               <image>
+                  <Image url="@cellphone.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <MenuBar prefHeight="25.0" prefWidth="800.0" style="-fx-background-color: #17D3E8;">
         <menus>
           <Menu mnemonicParsing="false" text="Cadastros">
             <items>
               <MenuItem mnemonicParsing="false" onAction="#abrirCadAluno" text="Cadastro de Alunos" />
                   <MenuItem mnemonicParsing="false" onAction="#abrirCadTurma" text="Cadastro de Turmas" />
+                  <MenuItem mnemonicParsing="false" onAction="#abrirCadServidor" text="Cadastro de Servidores" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Controle">

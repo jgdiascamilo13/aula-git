@@ -51,6 +51,21 @@ public class MenuPrincipalController implements Initializable {
 
     @FXML
     private void abrirCadTurma(ActionEvent event) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader();
+            fxmlLoader.setLocation(getClass().getResource("CadTurma.fxml"));
+            Scene scene = new Scene(fxmlLoader.load(), 900, 682);
+            Stage stage = new Stage();
+            stage.setTitle("Cadastrar Turma");
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+
+        }
+    }
+
+    @FXML
+    private void abrirCadServidor(ActionEvent event) {
     }
     
 }
