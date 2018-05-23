@@ -39,7 +39,7 @@ public class MenuPrincipalController implements Initializable {
          try {
             FXMLLoader fxmlLoader = new FXMLLoader();
             fxmlLoader.setLocation(getClass().getResource("cadAluno.fxml"));
-            Scene scene = new Scene(fxmlLoader.load(), 900, 682);
+            Scene scene = new Scene(fxmlLoader.load(), 674, 400);
             Stage stage = new Stage();
             stage.setTitle("Cadastrar Aluno");
             stage.setScene(scene);
@@ -54,7 +54,7 @@ public class MenuPrincipalController implements Initializable {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader();
             fxmlLoader.setLocation(getClass().getResource("CadTurma.fxml"));
-            Scene scene = new Scene(fxmlLoader.load(), 900, 682);
+            Scene scene = new Scene(fxmlLoader.load(), 674, 400);
             Stage stage = new Stage();
             stage.setTitle("Cadastrar Turma");
             stage.setScene(scene);
@@ -66,6 +66,11 @@ public class MenuPrincipalController implements Initializable {
 
     @FXML
     private void abrirCadServidor(ActionEvent event) {
+    }
+
+    @FXML
+    private void fecharPrograma(ActionEvent event) {
+        System.exit(0);
     }
     
 }
